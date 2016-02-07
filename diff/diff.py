@@ -6,7 +6,6 @@ specific details of the results. '''
 
 import pandas as pd
 
-
 class TestResults(object):
     """An object to collect and display the results of tests"""
 
