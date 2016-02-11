@@ -28,6 +28,9 @@ The product of compare datasets is itself a dataset. This allows you to programm
  No. You would need to call Compare Datasets multiple times.
 * Can I control the format of the output?  
  No. Unlike text (e.g. output unix's diff) dataframes are easily manipulated. Any required formatting is easy to do outside of 'Compare Datasets'
+ * Can I diff arbitrary collection objects e.g. dictionaries?
+ No. Look at the [DataDiff](https://sourceforge.net/projects/datadiff/.)
+ package. 
 
 ## For comparison
 * [R compare package]( http://www.inside-r.org/packages/cran/rioja/docs/compare.datasets)
