@@ -34,8 +34,9 @@ def diff_lists(A, B):
 
     return results
 
-# TODO(daniel) General compare_* function. Comparing column names or rows or
-# anything is fundamentally the same operation. Comparing column names is a
-# standard call. Comparing dataframes rows take two iterations i.e. one to
+
+
+
+# TODO(daniel) Comparing dataframes rows take two iterations i.e. one to
 # find which rows are different, second to identify individual values that
 # are different.

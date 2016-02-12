@@ -1,14 +1,16 @@
 # Compare Datasets
 
-So you got two datasets and you want to know if they are the same or different. If different then you would love an idea of how they are different. Well 'Compare Datasets' can help.
+So you got two datasets and you want to know if they are the same or different. If different then you would love an idea of how they are different. I hope DiffDF
+can help.
 
 Enter 'Compare Datasets'. Compare datasets is python library that allows a quick, simple comparison of datasets. For simplicity let's say A is the 'original dataset' and B is the 'new dataset'
 
-1. _Exact duplication_. The data, field names and order are the same. A = B.
+1. _Exact duplication_. Everything is the same. The data, field names, row names and order of everything is the same.
 1. _Additions_. B = A + some records and/or fields
 1. _Subtractions_. B = A - some records and/or fields
 1. _Updates_. B = Same identified rows as A, but with different values for those rows. Note: this check requires identifying the row ids.
 1. _Same data, different fieldnames_. Sometimes the data isn't changed, but field names are tidied up. E.g. "First Name" vs First_Name. TODO(daniel) Determine how columns are matched between A and B. Do we compare common transformations on names, e.g. space to underscore, or do we compare blocks of the data and surmise its the 'same' field?
+1. _Same fieldnames, different data_.
 1. _Record Order_. Checks if A and B have records in the same order. Note: by default ignore_record_order = True. Set it to false if you care about order.
 1. _Column Order_. Checks if A and B have fields in the same order. Note: by default ignore_field_order = True. Set it to false if you care about order.
 
@@ -28,9 +30,10 @@ The product of compare datasets is itself a dataset. This allows you to programm
  No. You would need to call Compare Datasets multiple times.
 * Can I control the format of the output?  
  No. Unlike text (e.g. output unix's diff) dataframes are easily manipulated. Any required formatting is easy to do outside of 'Compare Datasets'
- * Can I diff arbitrary collection objects e.g. dictionaries?
- No. Look at the [DataDiff](https://sourceforge.net/projects/datadiff/.)
- package. 
+* Can I diff arbitrary collection objects e.g. dictionaries?
+ No. Look at [DataDiff](https://sourceforge.net/projects/datadiff/).
+* What if the values are the same but the types are different?
+  
 
 ## For comparison
 * [R compare package]( http://www.inside-r.org/packages/cran/rioja/docs/compare.datasets)
