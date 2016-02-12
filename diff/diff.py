@@ -10,12 +10,16 @@ class TestResults(object):
     """An object to collect and display the results of tests"""
 
     def __init__(self):
+        self.test()
         pass
 
     def add_result(self, result):
         pass
 
     def display_results(self):
+        pass
+
+    def pass_results_to_df(self):
         pass
 
 
@@ -34,6 +38,7 @@ def diff_lists(A, B):
 
     return results
 
+def diff_data
 
 
 
