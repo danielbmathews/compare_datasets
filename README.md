@@ -45,6 +45,7 @@ Difference DataFrame
 | Added Fields | ['ColC', 'ColD'] |
 | Lost Fields  | ['ColB']         |
 
+Note: the tabulate library can create the markdown tables from DataFrames.
 
 ## Options
 1. _Ignore Order_. Default False. When True, then row

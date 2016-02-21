@@ -9,11 +9,13 @@ import pandas as pd
 class TestResults(object):
     """An object to collect and display the results of tests"""
 
-    def __init__(self):
-        self.test()
+    def __init__(self, test, result):
+        self.test = test
+        self.result = result
         pass
 
-    def add_result(self, result):
+    def add_result(self, test, result):
+
         pass
 
     def display_results(self):
@@ -38,7 +40,8 @@ def diff_lists(A, B):
 
     return results
 
-def diff_data
+def diff_data():
+    pass
 
 
 
