@@ -5,24 +5,33 @@ compared to it. The difference dataframe has #1 tests, #2 results, #3 as needed
 specific details of the results. '''
 
 import pandas as pd
+from collections import namedtuple
 
-class TestResults(object):
-    """An object to collect and display the results of tests"""
+testresults = namedtuple('TestResult', ['test', 'results'])
 
-    def __init__(self, test, result):
-        self.test = test
-        self.result = result
-        pass
 
-    def add_result(self, test, result):
+class TestResult:
+    'An object to collect and display the results of tests'
 
-        pass
+    def __init__(self):
+        'Create list to hold test names and results.'
+        self.results = []
+
+    def add_result(self, test, results):
+        self.results.append(testresults(test, results))
 
     def display_results(self):
-        pass
+        for i, item in enumerate(self.results):
+            print 'Test #', i
+            print self.results[i].test
+            print self.results[i].results
+            print '\n'
 
-    def pass_results_to_df(self):
-        pass
+x = TestResult()
+x.add_result("test1", "result1")
+x.add_result("test2", "result2")
+
+x.display_results()
 
 
 def diff_lists(A, B):
@@ -40,7 +49,7 @@ def diff_lists(A, B):
 
     return results
 
-def diff_data():
+def diff_dfs():
     pass
 
 
