@@ -70,3 +70,4 @@ No.
 ## For comparison
 * [R compare package]( http://www.inside-r.org/packages/cran/rioja/docs/compare.datasets)
 * [Unix diff function](http://man7.org/linux/man-pages/man1/diff.1.html)
+* Others?
